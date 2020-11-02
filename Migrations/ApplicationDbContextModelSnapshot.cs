@@ -3,7 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using hotchocolatedemo.GraphQL.Data;
+using hotchocolatedemo.Data;
 
 namespace hotchocolatedemo.Migrations
 {
@@ -16,7 +16,7 @@ namespace hotchocolatedemo.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.0-rc.2.20475.6");
 
-            modelBuilder.Entity("hotchocolatedemo.GraphQL.Data.Manufacturer", b =>
+            modelBuilder.Entity("hotchocolatedemo.Data.Manufacturer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,7 +32,7 @@ namespace hotchocolatedemo.Migrations
                     b.ToTable("Manufacturers");
                 });
 
-            modelBuilder.Entity("hotchocolatedemo.GraphQL.Data.Product", b =>
+            modelBuilder.Entity("hotchocolatedemo.Data.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -59,9 +59,9 @@ namespace hotchocolatedemo.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("hotchocolatedemo.GraphQL.Data.Product", b =>
+            modelBuilder.Entity("hotchocolatedemo.Data.Product", b =>
                 {
-                    b.HasOne("hotchocolatedemo.GraphQL.Data.Manufacturer", "PrimaryManufacturer")
+                    b.HasOne("hotchocolatedemo.Data.Manufacturer", "PrimaryManufacturer")
                         .WithMany()
                         .HasForeignKey("PrimaryManufacturerId");
 

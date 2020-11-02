@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace hotchocolatedemo.GraphQL.Data
+namespace hotchocolatedemo.Data
 {
     public class Manufacturer
     {

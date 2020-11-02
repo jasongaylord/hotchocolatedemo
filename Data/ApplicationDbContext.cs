@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace hotchocolatedemo.GraphQL.Data
+namespace hotchocolatedemo.Data
 {
     public class ApplicationDbContext : DbContext
     {
