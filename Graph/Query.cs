@@ -2,7 +2,7 @@ using HotChocolate;
 using hotchocolatedemo.Data;
 using System.Linq;
 
-namespace ConferencePlanner.GraphQL
+namespace hotchocolatedemo.Graph
 {
     public class Query
     {
