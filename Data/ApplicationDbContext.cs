@@ -7,7 +7,7 @@ namespace hotchocolatedemo.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         { }
 
-        public DbSet<Manufacturer> Manufacturers { get; set; }
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Manufacturer> Manufacturers { get; set; } = default!;
+        public DbSet<Product> Products { get; set; } = default!;
     }
 }
